@@ -1,0 +1,11 @@
+.background-ribbon {
+    background-image: url('../../../assets/icons/ribbon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-star {
+    background-image: url('../../../assets/icons/star.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

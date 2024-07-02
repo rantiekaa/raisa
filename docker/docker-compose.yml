@@ -1,0 +1,30 @@
+version: "3.4"
+
+services:
+  nk1-landing-page-prod:
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile
+      target: deploy
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 1024M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    image: nk1-landing-page-prod
+    container_name: nk1-landing-page-prod
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3002:3002
+#    networks:
+#      - nk1
+
+#networks:
+#  nk1:
+#    external:
+#      name: nk1

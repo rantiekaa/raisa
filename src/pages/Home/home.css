@@ -1,0 +1,70 @@
+.scratch::before {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  scale: 1.5;
+  content: url('../../assets/icons/scratch.svg');
+  rotate: 7deg;
+}
+
+@media (max-width: 1280px) {
+  .scratch::before {
+    scale: 1.2;
+    left: 10px;
+    top: 0;
+  }
+}
+
+.background {
+  background-image: url('../../assets/imgs/tying-shoelaces.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-button-lead {
+  background-image: url('../../assets/icons/bg-button-lead.svg');
+  background-size: cover;
+  position: relative;
+}
+
+/* .background-button-order {
+  background-image: url("../../assets/icons/bg-button-lead.svg");
+  background-size: cover;
+  position: relative;
+} */
+
+.background-button-lead::after {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  content: url('../../assets/icons/bg-button-lead-accent.svg');
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px #2a2a2d;
+}
+
+.fading-effect {
+  -webkit-mask: linear-gradient(#000, #0000);
+  mask: linear-gradient(#000, #0000);
+}
+
+.accordion > *:first-child::before,
+.accordion > *:last-child::after {
+  content: '';
+  position: absolute;
+  height: 20rem;
+  width: 5rem;
+  transform: skewX(12deg);
+  z-index: -1;
+}
+
+.accordion > *:first-child::before {
+  left: -2rem;
+  top: 0px;
+}
+
+.accordion > *:last-child::after {
+  right: -2rem;
+  bottom: 0px;
+}

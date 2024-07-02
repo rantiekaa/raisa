@@ -1,0 +1,105 @@
+.input-email::placeholder {
+  color: var(--Secondary, #fff);
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.title-description {
+  color: #2a2a2d;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: justify;
+  font-style: normal;
+  line-height: normal;
+}
+
+.title-description > span {
+  margin-top: 1rem;
+  color: #2a2a2d;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.title-description > p {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 160%; /* 28.8px */
+  margin-bottom: 1rem;
+}
+
+.detail-type > h2 {
+  color: var(--Pink, #ff19ac);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.detail-type > h1 {
+  color: #2a2a2d;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.size-product > label,
+.quantity-box > label {
+  color: #2a2a2d;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.size {
+  color: var(--Secondary, #fff);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.size-xl {
+  color: var(--Yellow, #ffbe00);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.label-order {
+  color: var(--Secondary, #fff);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.facebook,
+.whatsapp,
+.instagram {
+  background-color: #ff693b;
+}
+
+.title-description > h1,
+.detail-type > h1,
+.detail-type > h2 {
+  font-family: Peace Sans;
+}
+
+.clip-sizes {
+  clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 100% 100%, 25% 100%, 0 75%, 0 0);
+}
+
+.clip-right {
+  clip-path: polygon(5% 0, 96% 4%, 100% 96%, 0% 100%);
+}
+
+.clip-order {
+  clip-path: polygon(4% 4%, 94% 0, 100% 100%, 0 96%);
+}
