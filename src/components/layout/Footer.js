@@ -1,16 +1,35 @@
 import Copyright from '../../assets/icons/copyright.svg'
-import NKOneLogoFooter from '../../assets/imgs/nk1-logo-footer.png'
+import logoFooter from '../../assets/imgs/logo-PUTIH.png'
 import Facebook from '../../assets/icons/facebook-icon.svg'
 import Whatsapp from '../../assets/icons/whatsapp-icon.svg'
 import Instagram from '../../assets/icons/instagram-icon.svg'
 import './Footer.css'
+import ChatBot from 'react-simple-chatbot';
+
+const steps = [
+  {
+    id: '1',
+    message: 'What is your name?',
+    trigger: '2',
+  },
+  {
+    id: '2',
+    user: true,
+    trigger: '3',
+  },
+  {
+    id: '3',
+    message: 'Hi {previousValue}, nice to meet you!',
+    end: true,
+  },
+];
 
 const Footer = () => {
   return (
     <footer>
       <div className="background-footer flex flex-col justify-center px-32 gap-10 pb-32 pt-40">
         <div className="flex justify-center items-center content-center">
-          <img src={NKOneLogoFooter} alt="Logo" />
+          <img src={logoFooter} alt="Logo" style={{width: '200px'}}/>
         </div>
         <div className="grid grid-cols-3 grid text-white leading-7">
           <div className="">
@@ -50,6 +69,9 @@ const Footer = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className='chatbot--ai'>
+        <ChatBot steps={steps} floating={true} botDelay={1000}/>
       </div>
     </footer>
   )

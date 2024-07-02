@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/imgs/logo.svg'
+import logo from '../../assets/imgs/logo-HITAM.png'
 import bag from '../../assets/icons/bag.svg'
 import search from '../../assets/icons/search.svg'
 import bestProduct from '../../assets/icons/best-product-of-month.svg'
@@ -10,7 +10,7 @@ function Navbar() {
     <nav className='flex justify-between items-center w-100 mx-32 pt-10'>
         <ul>
           <Link to='/'>
-              <img src={logo} alt="Logo NK1" />
+              <img src={logo} alt="Raisa Sports" style={{width: '200px'}}/>
           </Link>
         </ul>
         <ul className='flex items-center gap-5'>
@@ -20,12 +20,15 @@ function Navbar() {
               </a>
             </li>
             <li>
-            <a href="/#Catalog">
-              ALL PRODUCT
-            </a>
+              <a href="/#category">
+                CATEGORY
+              </a>
             </li>
-            <li>MEN</li>
-            <li>WOMEN</li>
+            <li>
+              <a href="/#Catalog">
+                ALL PRODUCT
+              </a>
+            </li>
         </ul>
         <ul className='flex gap-5'>
             <li><img src={bag} alt="Bag" /></li>

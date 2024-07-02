@@ -11,3 +11,9 @@
   font-family: "Zachbel X";
   src: url("./assets/fonts/zacbelx-medium.ttf");
 }
+.chatbot--ai .rsc-container {
+  max-height: 85vh;
+}
+.chatbot--ai .rsc-content {
+  max-height: 64vh;
+}
